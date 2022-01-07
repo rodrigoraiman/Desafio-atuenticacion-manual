@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
  
+  devise_for :users
   get 'new_user/new'
   post 'new_user/create'
   resources :users, only: [:new, :create, :show] 
